@@ -173,7 +173,7 @@ class GAOptimizer(keras.optimizers.Optimizer):
     )
 
   @property
-  def optimizer(self):
+  def inner_optimizer(self):
     """Returns the wrapped optimizer which this GAOptimizer is wrapping."""
     return self._optimizer
 
